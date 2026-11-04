@@ -1,0 +1,218 @@
+.ai-tools-card *,
+.demo-examples-card * { overflow-wrap: anywhere; }
+
+.ai-tools-card,
+.demo-examples-card {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.ai-tools-heading {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.ai-tool-grid,
+.demo-card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.ai-tool-card,
+.demo-example-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: .7rem;
+  min-width: 0;
+  padding: 1rem;
+  border: 1px solid #c9d9d4;
+  border-radius: 18px;
+  background: #fff;
+}
+
+.ai-tool-card p,
+.demo-example-card p { margin: 0; }
+.ai-tool-card button { min-height: 44px; margin-top: auto; }
+.ai-tool-actions { display: flex; flex-wrap: wrap; gap: .65rem; width: 100%; margin-top: auto; }
+.ai-tool-actions button { margin-top: 0; }
+.ai-tool-primary { background: linear-gradient(135deg, #effaf5, #fff7d9); }
+.ai-tool-unavailable { background: #f6f7f7; color: #4e5c59; }
+.ai-tool-unavailable button[disabled] { opacity: 1; color: #56635f; background: #e4e9e7; }
+.ai-primary-boundary {
+  margin: 0;
+  padding: .8rem 1rem;
+  border-left: 4px solid #0e786a;
+  border-radius: 10px;
+  background: #edf8f4;
+  color: #294942;
+}
+
+.ai-tool-status,
+.demo-badge {
+  display: inline-flex;
+  align-items: center;
+  min-height: 28px;
+  padding: .25rem .55rem;
+  border-radius: 999px;
+  font-size: .76rem;
+  font-weight: 800;
+  letter-spacing: .035em;
+}
+
+.status-prepared { color: #7a3a00; background: #fff0c2; }
+.status-live { color: #075848; background: #dff4ec; }
+.status-governed { color: #075848; background: #dff4ec; }
+.status-gated { color: #6b2632; background: #f7e4e8; }
+.demo-badge { color: #5f3500; background: #ffe08a; }
+
+.additional-ai-utilities {
+  padding: .8rem 1rem;
+  border: 1px solid #d7e1de;
+  border-radius: 14px;
+  background: #fbfcfc;
+}
+.additional-ai-utilities > h3 { margin: 0; }
+.additional-ai-utilities > p { margin: .35rem 0 1rem; }
+.ai-tool-grid-secondary { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.utility-runtime-note { color: #52635e; font-size: .9rem; }
+
+.release-identity {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: .65rem;
+  margin: 0;
+}
+.release-identity > div {
+  min-width: 0;
+  padding: .7rem .8rem;
+  border: 1px solid #d7e1de;
+  border-radius: 12px;
+  background: #f8faf9;
+}
+.release-identity dt { color: #52635e; font-size: .78rem; font-weight: 800; text-transform: uppercase; }
+.release-identity dd { margin: .25rem 0 0; font-weight: 750; overflow-wrap: anywhere; }
+
+.knowledge-panel { margin-top: 1.25rem; }
+.knowledge-panel .help-details-body { display: grid; gap: 1rem; }
+
+.demo-examples-card details > summary {
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-weight: 800;
+}
+
+.demo-examples-card.demo-hidden details { display: none; }
+.demo-example-card h3 { margin: 0; }
+.demo-example-meta { color: #596a65; font-size: .9rem; }
+.demo-example-boundary { padding-top: .65rem; border-top: 1px solid #e2e7e5; font-size: .88rem; }
+.demo-example-card button { min-height: 44px; }
+
+#hoa-mai-action-dialog {
+  width: min(880px, calc(100vw - 2rem));
+  max-width: none;
+  max-height: calc(100dvh - 2rem);
+  overflow: hidden;
+}
+
+.hoa-mai-action-panel {
+  width: 100%;
+  max-height: calc(100dvh - 2rem);
+  display: grid;
+  gap: 1.15rem;
+  padding: clamp(1.25rem, 3vw, 2rem);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+
+.dialog-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 1rem;
+}
+
+.hoa-mai-action-panel label { display: grid; gap: .45rem; font-weight: 750; }
+.hoa-mai-action-panel select,
+.hoa-mai-action-panel button { min-height: 44px; }
+.hoa-mai-action-panel > p { max-width: 68ch; margin: 0; }
+.hoa-mai-action-panel > #b-hoa-mai-action { width: min(100%, 22rem); }
+
+.ai-execution-details {
+  grid-column: 1 / -1;
+  width: 100%;
+  padding: .7rem .8rem;
+  border: 1px solid #c9d9d4;
+  border-radius: 12px;
+  background: #fff;
+}
+.ai-execution-details summary { min-height: 44px; display: flex; align-items: center; cursor: pointer; font-weight: 800; }
+.ai-execution-details .review-list { margin-top: .6rem; }
+
+@media (max-width: 600px) {
+  .ai-tool-actions { display: grid; }
+  .ai-tool-actions button { width: 100%; }
+}
+
+.guest-draft-preview {
+  margin-top: 1rem;
+  padding: 1rem;
+  border: 1px solid #d3b34d;
+  border-radius: 14px;
+  background: #fffaf0;
+}
+.guest-draft-preview h3 { margin: .15rem 0 .75rem; }
+.guest-draft-preview dl {
+  display: grid;
+  grid-template-columns: minmax(7rem, .35fr) minmax(0, 1fr);
+  gap: .35rem .75rem;
+  margin: 0 0 .75rem;
+}
+.guest-draft-preview dt { font-weight: 700; }
+.guest-draft-preview dd { margin: 0; overflow-wrap: anywhere; }
+
+@media (max-width: 720px) {
+  html, body { max-width: 100%; overflow-x: hidden; }
+  .app-header { width: 100%; max-width: 100vw; grid-template-columns: minmax(0, 1fr) auto auto; overflow: hidden; }
+  .app-header .brand { min-width: 0; gap: 8px; }
+  .app-header .brand strong { font-size: 1rem; }
+  .header-actions .login-shortcut { display: none; }
+  main#main,
+  .app-hero,
+  .ai-tools-card,
+  .demo-examples-card { min-width: 0; max-width: 100%; }
+  .app-hero h1 { overflow-wrap: anywhere; }
+  .ai-tool-grid,
+  .demo-card-grid { grid-template-columns: 1fr; }
+  .release-identity { grid-template-columns: 1fr 1fr; }
+  .ai-tools-card,
+  .demo-examples-card { padding: 1rem; }
+  .dialog-heading { align-items: stretch; flex-direction: column; }
+  .dialog-heading button { width: 100%; }
+  #hoa-mai-action-dialog {
+    width: calc(100vw - 1rem);
+    max-height: calc(100dvh - 1rem);
+    border-radius: 16px;
+  }
+  .hoa-mai-action-panel {
+    max-height: calc(100dvh - 1rem);
+    padding: 1rem;
+  }
+  .hoa-mai-action-panel > #b-hoa-mai-action { width: 100%; }
+  .guest-draft-preview dl { grid-template-columns: 1fr; gap: .1rem; }
+  .guest-draft-preview dd { margin-bottom: .55rem; }
+}
+
+@media (max-width: 420px) {
+  .release-identity { grid-template-columns: 1fr; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ai-tools-card *,
+  .demo-examples-card * { scroll-behavior: auto !important; }
+}

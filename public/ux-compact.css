@@ -1,0 +1,118 @@
+/* Compact public journey. Technical status and long explanations live in Help. */
+.app-header { grid-template-columns: minmax(0, auto) minmax(0, 1fr) auto; }
+.app-header .brand { min-width: 0; }
+.app-header .brand strong { white-space: nowrap; }
+.primary-nav a { white-space: nowrap; }
+
+.login-shortcut {
+  position: static;
+  z-index: auto;
+  min-width: 0;
+  min-height: 44px;
+  padding: 8px 14px;
+  border-width: 1px;
+  box-shadow: none;
+  white-space: nowrap;
+}
+.login-shortcut[hidden], .sign-out[hidden] { display: none !important; }
+.sign-out { flex: 0 0 auto; min-height: 44px; padding: 8px 13px; border: 1px solid var(--yellow); border-radius: 999px; background: transparent; color: #fff; white-space: nowrap; }
+
+.app-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  width: min(1180px, calc(100% - 28px));
+  margin: 22px auto;
+  padding: clamp(28px, 5vw, 56px);
+}
+.app-hero h1 {
+  max-width: 760px;
+  font-size: clamp(2.3rem, 5vw, 4.5rem);
+  line-height: 1.04;
+  overflow-wrap: normal;
+}
+.app-hero .hero-copy { max-width: 650px; }
+.hero-actions { margin-top: 20px; }
+
+main#main { width: min(1180px, 100%); }
+.section-anchor { display: block; height: 1px; scroll-margin-top: 94px; }
+.open-offers-card { margin-top: 0; }
+.context-hint { max-width: 100%; margin: 4px 0 12px; font-size: .88rem; color: #36564c; }
+.context-hint summary { width: fit-content; min-height: 44px; display: list-item; align-content: center; cursor: pointer; font-weight: 750; }
+.context-hint summary:focus-visible { outline: 3px solid #28a88a; outline-offset: 3px; }
+.context-hint p { max-width: 68ch; margin: 0 0 8px; line-height: 1.5; overflow-wrap: anywhere; }
+.open-offers-card > .context-hint { margin-top: -4px; }
+#service-intro-dialog { max-height: calc(100dvh - 32px); overflow: auto; }
+#service-intro-dialog .dialog-card { display: grid; gap: 12px; }
+#service-intro-dialog .dialog-card > button { justify-self: start; }
+#service-intro-dialog article[hidden] { display: none; }
+#service-intro-dialog article { min-width: 0; overflow-wrap: anywhere; }
+
+.real-only-gate {
+  grid-template-columns: minmax(0, 1fr) minmax(0, 420px);
+  align-items: start;
+  gap: clamp(16px, 3vw, 32px);
+  margin: 18px 0;
+  padding: clamp(18px, 3vw, 28px);
+}
+.real-only-gate > * { min-width: 0; }
+.real-only-gate h2 { max-width: 560px; line-height: 1.12; }
+.real-only-gate > div:first-child p:last-child { max-width: 540px; line-height: 1.55; }
+.login-options { width: 100%; min-width: 0; max-width: 100%; gap: 4px; }
+.login-options .button-link { width: 100%; min-width: 0; white-space: normal; overflow-wrap: anywhere; }
+.login-options small { font-weight: 600; line-height: 1.35; }
+.identity-separator { margin-top: 8px !important; font-weight: 700; }
+.connection-details { grid-column: 1 / -1; padding-top: 8px; border-top: 1px solid #e4d6a7; }
+.connection-details summary { width: fit-content; cursor: pointer; color: #176b66; font-weight: 750; }
+.connection-details .blocker-list { margin-top: 10px; font-size: .85rem; }
+
+.location-panel { grid-template-columns: minmax(0, .7fr) minmax(0, 1.3fr); }
+.location-controls { grid-template-columns: minmax(0, .7fr) minmax(0, 1fr) auto; }
+.location-controls > .context-hint { grid-column: 1 / -1; margin-bottom: 0; }
+.location-controls label, .location-controls input, .location-controls select { min-width: 0; }
+.location-panel .eyebrow { margin-bottom: 5px; }
+.location-panel h2 { font-size: clamp(1.35rem, 2.4vw, 1.8rem); line-height: 1.15; }
+.location-source { margin-bottom: 0; }
+
+.workflow-grid[hidden] { display: none !important; }
+.workflow-grid > *, .hoa-mai-panel > *, .form-grid > * { min-width: 0; }
+.hoa-mai-panel { grid-template-columns: 44px minmax(0, 1fr); }
+.hoa-mai-panel .wide, .hoa-mai-panel button, .hoa-mai-panel .assistant-output { grid-column: 1 / -1; min-width: 0; }
+.hoa-mai-panel textarea { display: block; width: 100%; min-width: 0; }
+.hoa-mai-panel button { justify-self: stretch; }
+.card-heading > div { min-width: 0; }
+
+.content-section { margin-block: 22px; padding: clamp(22px, 3vw, 36px); }
+.step-grid article, .help-grid article { padding: 18px; }
+.status-drawer { margin-top: 22px; }
+.status-drawer .status-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.support-drawer > summary span:last-child,
+.help-details > summary span:last-child { white-space: normal; }
+
+@media (max-width: 1360px) {
+  .app-header { grid-template-columns: minmax(0, 1fr) auto auto; }
+}
+@media (max-width: 900px) {
+  .real-only-gate, .location-panel { grid-template-columns: minmax(0, 1fr); }
+  .location-controls { grid-template-columns: minmax(0, .7fr) minmax(0, 1fr) auto; }
+}
+@media (max-width: 700px) {
+  .app-header { grid-template-columns: minmax(0, 1fr) auto auto; gap: 6px; }
+  .header-actions { gap: 6px; }
+  .login-shortcut { display: inline-flex; padding: 7px 10px; font-size: .78rem; }
+  .sign-out { padding: 7px 10px; font-size: .78rem; }
+  .language-toggle { min-width: 42px; padding-inline: 6px; }
+  .app-hero { width: calc(100% - 24px); margin: 12px auto 18px; padding: 28px 20px; }
+  .app-hero h1 { font-size: clamp(2rem, 9vw, 3rem); }
+  .app-hero .hero-copy { font-size: 1rem; }
+  .real-only-gate { padding: 18px; }
+  .location-controls { grid-template-columns: minmax(0, 1fr); }
+  .status-drawer .status-grid { grid-template-columns: minmax(0, 1fr); }
+}
+@media (max-width: 370px) {
+  .app-header .brand-mark { width: 34px; height: 34px; font-size: 1.25rem; }
+  .app-header .brand strong { font-size: .95rem; }
+  .app-header .brand { gap: 5px; }
+  .login-shortcut { padding-inline: 7px; }
+  .sign-out { padding-inline: 7px; }
+  .menu-toggle { padding-inline: 8px; }
+}

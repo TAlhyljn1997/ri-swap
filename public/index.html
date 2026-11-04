@@ -1,0 +1,494 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <title>RI-SWAP · Agreement-based exchange</title>
+  <link rel="stylesheet" href="styles.css?v=ri-yellow-fit-20261027-1">
+  <link rel="stylesheet" href="integrations.css?v=ri-swap-public-workflow-responsive-20261028-16">
+  <link rel="stylesheet" href="real-only.css?v=ri-swap-public-workflow-responsive-20261028-16">
+  <link rel="stylesheet" href="mobile-fix.css?v=ri-swap-mobile-login-20261028-18">
+  <link rel="stylesheet" href="app-shell.css?v=ri-swap-task-first-20261028-22">
+  <link rel="stylesheet" href="open-offers.css?v=ri-swap-open-offers-20261028-24">
+  <link rel="stylesheet" href="ux-compact.css?v=ri-swap-compact-20261029-3">
+  <link rel="stylesheet" href="visible-ai-utilities.css?v=visible-ai-utilities-20261102-1">
+</head>
+<body>
+  <a class="skip" href="#main" data-vi="Bỏ qua đến nội dung" data-en="Skip to content">Skip to content</a>
+  <header class="topbar app-header">
+    <a class="brand" href="#home" aria-label="RI-SWAP home">
+      <span class="brand-mark" aria-hidden="true">↔</span>
+      <span><strong>RI-SWAP</strong><small>POWERED BY RI-YELLOW · REAL ONLY</small></span>
+    </a>
+    <button id="menu-toggle" class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" data-vi-aria-label="Mở menu" data-en-aria-label="Open menu"><span aria-hidden="true">☰</span><span data-vi="Menu" data-en="Menu">Menu</span></button>
+    <nav id="primary-nav" class="primary-nav" aria-label="Primary navigation">
+      <a href="#home" data-vi="Trang chính" data-en="Home">Home</a>
+      <a href="#exchange" data-vi="Trao đổi" data-en="Exchange">Exchange</a>
+      <a href="#how-it-works" data-vi="Cách hoạt động" data-en="How it works">How it works</a>
+      <a href="#about" data-vi="Giới thiệu" data-en="About">About</a>
+      <a href="#help" data-vi="Trợ giúp" data-en="Help">Help</a>
+      <span class="nav-divider" aria-hidden="true"></span>
+      <a class="nav-action nav-sign-in" href="#real-only-gate" data-vi="Đăng nhập" data-en="Sign in">Sign in</a>
+      <a class="nav-action nav-register" href="https://ri-ecosys.org/ri-yellow/#register" target="_blank" rel="noopener" data-vi="Đăng ký doanh nghiệp" data-en="Register business">Register business</a>
+      <a class="nav-action nav-directory" href="#intro-ri-yellow" data-service-intro="ri-yellow">RI-YELLOW</a>
+    </nav>
+    <div class="header-actions">
+      <a id="login-shortcut" class="login-shortcut" href="#real-only-gate" data-vi="Đăng nhập" data-en="Sign in">Sign in</a>
+      <button id="sign-out" class="sign-out" type="button" hidden data-vi="Đăng xuất" data-en="Sign out">Sign out</button>
+      <button id="language-toggle" class="language-toggle" type="button" aria-label="Chuyển sang tiếng Việt">VI</button>
+    </div>
+  </header>
+
+  <section id="home" class="hero app-hero">
+    <div>
+      <p class="eyebrow" data-vi="RI-SWAP · TRAO ĐỔI CỘNG ĐỒNG" data-en="RI-SWAP · COMMUNITY EXCHANGE">RI-SWAP · COMMUNITY EXCHANGE</p>
+      <h1 data-vi="Trao điều bạn có, nhận điều bạn cần" data-en="Exchange what you have for what you need">Exchange what you have for what you need</h1>
+      <p class="hero-copy" data-vi="Tìm nhu cầu phù hợp, trao đổi riêng và cùng xác nhận thỏa thuận." data-en="Find a match, discuss privately, and confirm an agreement together.">Find a match, discuss privately, and confirm an agreement together.</p>
+      <div class="hero-actions">
+        <a class="button-link hero-primary" href="#open-offers" data-vi="Xem trao đổi" data-en="Explore exchanges">Explore exchanges</a>
+        <a class="button-link hero-secondary" href="#how-it-works" data-vi="Xem cách hoạt động" data-en="How it works">How it works</a>
+      </div>
+    </div>
+  </section>
+
+  <main id="main">
+    <span id="exchange" class="section-anchor" aria-hidden="true"></span>
+
+    <section id="ai-tools" class="card ai-tools-card" aria-labelledby="ai-tools-title">
+      <div class="ai-tools-heading">
+        <div>
+          <p class="eyebrow" data-vi="HỖ TRỢ AI · TRẠNG THÁI THẬT" data-en="AI ASSISTANCE · TRUTHFUL STATUS">AI ASSISTANCE · TRUTHFUL STATUS</p>
+          <h2 id="ai-tools-title" data-vi="Bắt đầu với Hoa Mai" data-en="Start with Hoa Mai">Start with Hoa Mai</h2>
+          <p data-vi="Hoa Mai là điểm vào Meta AI chính của bản này. Hỏi hệ thống dùng các nguồn RI riêng và không gọi Meta." data-en="Hoa Mai is this release's primary Meta AI entrypoint. Ask the system uses separate RI sources and does not call Meta.">Hoa Mai is this release's primary Meta AI entrypoint. Ask the system uses separate RI sources and does not call Meta.</p>
+        </div>
+      </div>
+      <div class="ai-tool-grid">
+        <article class="ai-tool-card ai-tool-primary">
+          <span id="hoa-mai-utility-status" class="ai-tool-status status-prepared">CHECKING_RUNTIME</span>
+          <h3 data-vi="Tạo trao đổi cùng Hoa Mai" data-en="Create an exchange with Hoa Mai">Create an exchange with Hoa Mai</h3>
+          <p data-vi="Mô tả điều bạn có thể trao và điều bạn cần. Hoa Mai giúp làm rõ điều khoản; bạn xem lại mọi gợi ý trước khi lưu." data-en="Describe what you can offer and what you need. Hoa Mai helps clarify the terms; you review every suggestion before saving.">Describe what you can offer and what you need. Hoa Mai helps clarify the terms; you review every suggestion before saving.</p>
+          <div class="ai-tool-actions">
+            <button id="b-open-hoa-mai" class="teal" type="button" data-vi="Bắt đầu cùng Hoa Mai" data-en="Start with Hoa Mai">Start with Hoa Mai</button>
+            <button id="b-open-hoa-mai-actions" class="secondary" type="button" data-vi="Các hỗ trợ khác" data-en="More Hoa Mai actions">More Hoa Mai actions</button>
+          </div>
+        </article>
+        <article class="ai-tool-card">
+          <span class="ai-tool-status status-governed">RI SOURCES · META NOT CALLED</span>
+          <h3 data-vi="Hỏi hệ thống" data-en="Ask the system">Ask the system</h3>
+          <p data-vi="Hỏi cách RI-SWAP hoạt động. Kết quả giữ riêng từng nguồn và không tự tạo giao dịch." data-en="Ask how RI-SWAP works. Results keep each source separate and never create a transaction.">Ask how RI-SWAP works. Results keep each source separate and never create a transaction.</p>
+          <button id="b-open-system" class="secondary" type="button" data-vi="Mở Hỏi hệ thống" data-en="Open Ask the system">Open Ask the system</button>
+        </article>
+      </div>
+      <p id="meta-primary-boundary" class="ai-primary-boundary" data-vi="Chỉ tác vụ soạn Offer của Hoa Mai có thể gọi Meta Model API trong bản này. Kết quả vẫn là bản nháp để người dùng xem lại; AI không tự lưu, mở Offer, Accept hay tạo Agreement." data-en="Only Hoa Mai Offer Assist can call the Meta Model API in this release. Every result remains a user-reviewed draft; AI never saves, opens an Offer, accepts, or creates an Agreement by itself.">Only Hoa Mai Offer Assist can call the Meta Model API in this release. Every result remains a user-reviewed draft; AI never saves, opens an Offer, accepts, or creates an Agreement by itself.</p>
+      <dl id="release-identity" class="release-identity" aria-label="Release identity">
+        <div><dt data-vi="Ứng viên" data-en="Candidate">Candidate</dt><dd>s016 revision 003 · UI correction 001</dd></div>
+        <div><dt data-vi="Bản dựng" data-en="Build">Build</dt><dd>visible-ai-s016-rev003-ui-dialog-001</dd></div>
+        <div><dt data-vi="Lịch sử" data-en="History">History</dt><dd>s014 → s015 → correction 001 → correction 002 → s016 revision 001 → revision 002 → revision 003 → UI correction 001</dd></div>
+        <div><dt data-vi="Trạng thái" data-en="Status">Status</dt><dd data-vi="Đối chiếu bản đang phục vụ với release receipt" data-en="Verify the served build against its release receipt">Verify the served build against its release receipt</dd></div>
+      </dl>
+      <section id="meta-utilities-more" class="additional-ai-utilities" aria-labelledby="meta-utilities-title">
+        <h3 id="meta-utilities-title" data-vi="Các Meta utilities" data-en="Meta utilities">Meta utilities</h3>
+        <p data-vi="Các tiện ích dưới đây được hiển thị để minh bạch lộ trình, nhưng vẫn khóa cho đến khi consumer, privacy, schema và quyền runtime được kiểm chứng." data-en="These utilities are shown for roadmap transparency, but remain locked until their consumer, privacy, schema, and runtime authority are verified.">These utilities are shown for roadmap transparency, but remain locked until their consumer, privacy, schema, and runtime authority are verified.</p>
+        <div class="ai-tool-grid ai-tool-grid-secondary">
+          <article id="product-image-utility" class="ai-tool-card ai-tool-unavailable" aria-describedby="product-image-reason">
+            <span id="product-image-status" class="ai-tool-status status-gated">CHECKING_RUNTIME</span>
+            <h3 data-vi="Ảnh sản phẩm · SAM" data-en="Product image · SAM">Product image · SAM</h3>
+            <p id="product-image-reason" data-vi="Đang kiểm tra consumer ảnh, kho media riêng tư và binding SAM. Không gửi ảnh khi các cổng này chưa đạt." data-en="Checking the image consumer, private media repository, and SAM binding. No image is sent until these gates pass.">Checking the image consumer, private media repository, and SAM binding. No image is sent until these gates pass.</p>
+            <input id="product-image-input" type="file" accept="image/png,image/jpeg,image/gif,image/webp" disabled aria-describedby="product-image-reason">
+            <figure id="product-image-preview" hidden><img alt=""><figcaption data-vi="Xem trước cục bộ · chưa gửi" data-en="Local preview · not sent">Local preview · not sent</figcaption></figure>
+            <label><input id="product-image-consent" type="checkbox" disabled> <span data-vi="Tôi đồng ý gửi ảnh sau khi xem chính sách riêng tư" data-en="I consent to send the image after reviewing the privacy notice">I consent to send the image after reviewing the privacy notice</span></label>
+            <button id="product-image-send" type="button" disabled data-vi="Sắp có · chưa gửi ảnh" data-en="Coming next · no image sent">Coming next · no image sent</button>
+          </article>
+          <article id="voice-utility" class="ai-tool-card ai-tool-unavailable" aria-describedby="voice-reason">
+            <span id="voice-status" class="ai-tool-status status-gated">CHECKING_RUNTIME</span>
+            <h3 data-vi="Chuyển giọng nói thành chữ" data-en="Voice Transcribe">Voice Transcribe</h3>
+            <p id="voice-reason" data-vi="Đang kiểm tra schema và binding provider. Microphone không mở và không có byte âm thanh nào được gửi." data-en="Checking the provider schema and binding. The microphone is not opened and no audio bytes are sent.">Checking the provider schema and binding. The microphone is not opened and no audio bytes are sent.</p>
+            <button id="voice-permission" type="button" disabled data-vi="Sắp có · chưa xin quyền micro" data-en="Coming next · microphone not requested">Coming next · microphone not requested</button>
+            <textarea id="voice-transcript" rows="3" disabled data-vi-placeholder="Bản chép lời có thể sửa trước khi gửi" data-en-placeholder="Editable transcript before sending" placeholder="Editable transcript before sending"></textarea>
+            <label><input id="voice-transmission-consent" type="checkbox" disabled> <span data-vi="Tôi đồng ý gửi bản chép lời đã kiểm tra" data-en="I consent to send the reviewed transcript">I consent to send the reviewed transcript</span></label>
+            <button id="voice-send" type="button" disabled data-vi="Kiểm tra rồi gửi" data-en="Review then send">Review then send</button>
+          </article>
+          <article id="web-search-utility" class="ai-tool-card ai-tool-unavailable" aria-describedby="web-search-reason">
+            <span id="web-search-status" class="ai-tool-status status-gated">CHECKING_RUNTIME</span>
+            <h3 data-vi="Nghiên cứu web công khai" data-en="Public web research">Public web research</h3>
+            <p id="web-search-reason" data-vi="Tắt mặc định. Chỉ truy vấn công khai đã loại dữ liệu riêng tư mới có thể được xét mở trong một phạm vi được duyệt." data-en="Disabled by default. Only sanitised public queries may be considered under a separately approved scope.">Disabled by default. Only sanitised public queries may be considered under a separately approved scope.</p>
+            <button type="button" disabled data-vi="Đã tắt" data-en="Disabled">Disabled</button>
+          </article>
+        </div>
+        <p id="meta-utilities-runtime-note" class="utility-runtime-note" role="status" aria-live="polite" data-vi="Đang đọc trạng thái utility từ server…" data-en="Reading utility status from the server…">Reading utility status from the server…</p>
+      </section>
+    </section>
+
+    <section id="open-offers" class="card open-offers-card" aria-labelledby="offers-title" aria-busy="true">
+      <div class="open-offers-heading">
+        <header class="card-heading"><span>1</span><div><p class="eyebrow">DISCOVER</p><h2 id="offers-title" data-vi="Đề nghị đang mở" data-en="Open offers">Open offers</h2></div></header>
+        <p id="open-offers-auth-copy" data-vi="Xem Offer không cần đăng nhập. Đăng nhập để gửi đề nghị." data-en="Browse without signing in. Sign in to make a proposal.">Browse without signing in. Sign in to make a proposal.</p>
+      </div>
+      <details class="context-hint"><summary data-vi="Gợi ý xem Offer" data-en="Browsing tip">Browsing tip</summary><p data-vi="Tìm theo điều trao, điều cần hoặc khu vực. Chọn một Offer để xem chi tiết; đăng nhập khi muốn gửi đề nghị." data-en="Search by what is offered, needed, or the area. Open an offer for details; sign in when you want to make a proposal.">Search by what is offered, needed, or the area. Open an offer for details; sign in when you want to make a proposal.</p></details>
+      <div class="open-offers-tools">
+        <label><span data-vi="Tìm trong Offer đang mở" data-en="Search open offers">Search open offers</span><input id="offer-search" type="search" maxlength="120" autocomplete="off" data-vi-placeholder="Tìm điều trao, điều cần hoặc khu vực…" data-en-placeholder="Search give, receive, or location…" placeholder="Search give, receive, or location…"></label>
+        <button id="b-clear-offer-search" class="secondary" type="button" data-vi="Xóa tìm kiếm" data-en="Clear search">Clear search</button>
+        <button id="b-refresh" class="secondary" type="button" data-vi="Làm mới" data-en="Refresh">Refresh</button>
+      </div>
+      <p class="open-offers-summary"><span id="offers-summary" role="status" aria-live="polite">Loading open offers…</span><time id="offers-updated" hidden></time></p>
+      <div id="offers" class="open-offer-list" aria-live="polite"></div>
+    </section>
+
+    <section id="demo-examples" class="card demo-examples-card" aria-labelledby="demo-title">
+      <div>
+        <p class="eyebrow" data-vi="DEMO · CHỈ LÀ VÍ DỤ" data-en="DEMO · EXAMPLE ONLY">DEMO · EXAMPLE ONLY</p>
+        <h2 id="demo-title" data-vi="Ví dụ để hiểu RI-SWAP" data-en="Examples for understanding RI-SWAP">Examples for understanding RI-SWAP</h2>
+        <p data-vi="Dữ liệu dưới đây không phải Offer thật, không nằm trong API/DB thật và không tạo Proposal hay Agreement." data-en="These records are not real Offers, are not in the real API/DB, and cannot create a Proposal or Agreement.">These records are not real Offers, are not in the real API/DB, and cannot create a Proposal or Agreement.</p>
+      </div>
+      <details open>
+        <summary data-vi="Offer mẫu" data-en="Demo Offers">Demo Offers</summary>
+        <div id="demo-offer-list" class="demo-card-grid"></div>
+      </details>
+      <details open>
+        <summary data-vi="Trao đổi mẫu đã đạt thỏa thuận" data-en="Demo exchanges that reached agreement">Demo exchanges that reached agreement</summary>
+        <div id="demo-exchange-list" class="demo-card-grid"></div>
+      </details>
+      <button id="b-toggle-demo" class="secondary" type="button" aria-pressed="true" data-vi="Ẩn ví dụ DEMO" data-en="Hide DEMO examples">Hide DEMO examples</button>
+    </section>
+
+    <section id="real-only-gate" class="real-only-gate" aria-labelledby="real-only-title">
+      <div>
+        <p class="eyebrow" data-vi="THAM GIA RI-SWAP" data-en="JOIN RI-SWAP">JOIN RI-SWAP</p>
+        <h2 id="real-only-title" data-vi="Đăng nhập để bắt đầu trao đổi" data-en="Sign in to start exchanging">Sign in to start exchanging</h2>
+        <p id="real-only-message" data-vi="Xem Offer miễn phí. Đăng nhập để tạo Offer hoặc gửi đề nghị riêng." data-en="Browse offers freely. Sign in to create an offer or send a private proposal.">Browse offers freely. Sign in to create an offer or send a private proposal.</p>
+      </div>
+      <div class="login-options">
+        <details class="context-hint"><summary data-vi="Gợi ý đăng nhập" data-en="Sign-in tip">Sign-in tip</summary><p data-vi="Dùng RI-YELLOW + OTP, Google hoặc Facebook theo trạng thái hiển thị dưới từng nút. Nút chưa sẵn sàng sẽ bị khóa." data-en="Choose RI-YELLOW + OTP, Google, or Facebook based on the status below each button. An unavailable option stays disabled.">Choose RI-YELLOW + OTP, Google, or Facebook based on the status below each button. An unavailable option stays disabled.</p></details>
+        <a id="ri-yellow-login-link" class="button-link login-provider unavailable" href="#business-link-title" aria-disabled="true" tabindex="-1" data-configured="false" data-vi="Đã có tài khoản RI-YELLOW · Đăng nhập bằng OTP" data-en="Already have a RI-YELLOW account · Sign in with OTP">Already have a RI-YELLOW account · Sign in with OTP</a>
+        <small id="ri-yellow-login-state" data-vi="RI-YELLOW WhatsApp OTP · đang cấu hình" data-en="RI-YELLOW WhatsApp OTP · configuration in progress">RI-YELLOW WhatsApp OTP · configuration in progress</small>
+        <p class="identity-separator" data-vi="Hoặc đăng nhập cá nhân" data-en="Or use a personal account">Or use a personal account</p>
+        <a id="google-login-link" class="button-link login-provider unavailable" href="api/auth/google/start" aria-disabled="true" tabindex="-1" data-configured="false" data-vi="Tiếp tục với Google" data-en="Continue with Google">Continue with Google</a>
+        <small id="google-login-state" data-vi="Google Login · đang cấu hình" data-en="Google Login · configuration in progress">Google Login · configuration in progress</small>
+        <a id="real-login-link" class="button-link login-provider unavailable" href="api/auth/facebook/start" aria-disabled="true" tabindex="-1" data-configured="false" data-vi="Tiếp tục với Facebook" data-en="Continue with Facebook">Continue with Facebook</a>
+        <small id="facebook-login-state" data-vi="Facebook Login · đang cấu hình" data-en="Facebook Login · configuration in progress">Facebook Login · configuration in progress</small>
+        <button id="recheck-session" class="button-link login-provider" type="button" hidden data-vi="Đã đăng nhập? Kiểm tra phiên" data-en="Signed in? Check session">Signed in? Check session</button>
+        <a id="ri-yellow-register-link" class="button-link ri-yellow-register" href="https://ri-ecosys.org/ri-yellow/#register" target="_blank" rel="noopener" data-vi="Đăng ký doanh nghiệp với RI-YELLOW ↗" data-en="Register a business with RI-YELLOW ↗">Register a business with RI-YELLOW ↗</a>
+        <details class="provider-details">
+          <summary data-vi="Điều gì xảy ra sau khi đăng ký?" data-en="What happens after registration?">What happens after registration?</summary>
+          <small data-vi="Form đăng ký có sẵn trên RI-YELLOW. Đăng ký tạo hồ sơ chờ duyệt; sau khi được duyệt và xuất bản, doanh nghiệp mới yêu cầu liên kết và xác minh quyền sở hữu." data-en="The registration form is provided by RI-YELLOW. Registration creates a profile for review; after approval and publication, the business can request linking and ownership verification.">The registration form is provided by RI-YELLOW. Registration creates a profile for review; after approval and publication, the business can request linking and ownership verification.</small>
+        </details>
+      </div>
+      <details class="connection-details">
+        <summary data-vi="Trạng thái kết nối" data-en="Connection status">Connection status</summary>
+        <ul id="real-only-blockers" class="blocker-list" aria-live="polite"></ul>
+      </details>
+    </section>
+
+    <section class="location-panel" aria-labelledby="location-title">
+      <div>
+        <p class="eyebrow">LOCATION · RI-YELLOW DIRECTORY</p>
+        <h2 id="location-title" data-vi="Chọn khu vực trao đổi" data-en="Choose an exchange location">Choose an exchange location</h2>
+        <p data-vi="Lọc Offer theo khu vực." data-en="Filter offers by area.">Filter offers by area.</p>
+      </div>
+      <div class="location-controls">
+        <details class="context-hint"><summary data-vi="Gợi ý chọn khu vực" data-en="Location tip">Location tip</summary><p data-vi="Chọn tiểu bang rồi nhập suburb hoặc postcode để lọc đề nghị. Danh sách gợi ý lấy từ listing RI-YELLOW đã công bố." data-en="Select a state, then enter a suburb or postcode to filter offers. Suggestions come from published RI-YELLOW listings.">Select a state, then enter a suburb or postcode to filter offers. Suggestions come from published RI-YELLOW listings.</p></details>
+        <label><span data-vi="Tiểu bang / Lãnh thổ" data-en="State or territory">State or territory</span>
+          <select id="location-state"><option value="NSW">New South Wales · NSW</option><option value="VIC">Victoria · VIC</option><option value="QLD">Queensland · QLD</option><option value="WA">Western Australia · WA</option><option value="SA">South Australia · SA</option><option value="ACT">Australian Capital Territory · ACT</option><option value="TAS">Tasmania · TAS</option><option value="NT">Northern Territory · NT</option></select>
+        </label>
+        <label><span data-vi="Suburb hoặc postcode" data-en="Suburb or postcode">Suburb or postcode</span>
+          <input id="location-query" list="ri-yellow-suburbs" maxlength="80" autocomplete="postal-code" placeholder="Cabramatta · 2166">
+          <datalist id="ri-yellow-suburbs"></datalist>
+        </label>
+        <button id="apply-location" class="teal" type="button" data-vi="Dùng khu vực này" data-en="Use this location">Use this location</button>
+        <a id="google-maps-link" class="button-link secondary" href="https://www.google.com/maps/search/?api=1&amp;query=Australia" target="_blank" rel="noopener" hidden data-vi="Kiểm tra trên Google Maps ↗" data-en="Check on Google Maps ↗">Check on Google Maps ↗</a>
+      </div>
+      <p id="location-source" class="location-source" aria-live="polite">Loading published RI-YELLOW suburbs…</p>
+      <p id="location-result" class="location-source" role="status" aria-live="polite"></p>
+    </section>
+
+    <div id="notice" class="notice" role="status" aria-live="polite"></div>
+
+    <details id="business-link-details" class="support-drawer business-link-drawer">
+      <summary>
+        <span data-vi="Liên kết doanh nghiệp RI-YELLOW" data-en="Link a RI-YELLOW business">Link a RI-YELLOW business</span>
+        <span data-vi="Sau khi đăng nhập" data-en="After sign-in">After sign-in</span>
+      </summary>
+      <section class="card business-link-card" aria-labelledby="business-link-title">
+        <div>
+          <p class="eyebrow">IDENTITY · RI-YELLOW BUSINESS LINK</p>
+          <h2 id="business-link-title" data-vi="Liên kết doanh nghiệp sau khi đăng nhập" data-en="Link a business after sign-in">Link a business after sign-in</h2>
+          <p><span id="who" class="identity-pill">Not signed in</span></p>
+          <p data-vi="Sau khi đăng nhập, nhập Business ID để yêu cầu xác minh quyền sở hữu." data-en="After signing in, enter your Business ID to request ownership verification.">After signing in, enter your Business ID to request ownership verification.</p>
+        </div>
+        <details class="context-hint"><summary data-vi="Gợi ý liên kết doanh nghiệp" data-en="Business link tip">Business link tip</summary><p data-vi="Tìm Business ID trên listing đã xuất bản rồi gửi yêu cầu liên kết. Quyền đại diện được xác minh riêng." data-en="Find the Business ID on a published listing, then request a link. Authority to represent the business is verified separately.">Find the Business ID on a published listing, then request a link. Authority to represent the business is verified separately.</p></details>
+        <form id="business-link-form" class="business-link-form">
+          <label><span>RI-YELLOW Business ID</span>
+            <input id="business-id" autocomplete="off" inputmode="text" maxlength="36" required pattern="[0-9A-Fa-f]{8}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{12}" placeholder="00000000-0000-0000-0000-000000000000">
+          </label>
+          <button id="business-link-submit" class="teal" type="submit" data-vi="Gửi yêu cầu liên kết" data-en="Request business link">Request business link</button>
+        </form>
+        <div class="business-paths" aria-label="RI-YELLOW business options">
+          <a class="button-link secondary" href="https://ri-ecosys.org/ri-yellow/" target="_blank" rel="noopener" data-vi="Tìm listing và Business ID ↗" data-en="Find your listing and Business ID ↗">Find your listing and Business ID ↗</a>
+          <a class="button-link ri-yellow-register" href="https://ri-ecosys.org/ri-yellow/#register" target="_blank" rel="noopener" data-vi="Chưa có listing? Đăng ký doanh nghiệp ↗" data-en="No listing yet? Register your business ↗">No listing yet? Register your business ↗</a>
+        </div>
+        <details class="boundary-details">
+          <summary data-vi="Vì sao vẫn cần xác minh quyền sở hữu?" data-en="Why is ownership verification still required?">Why is ownership verification still required?</summary>
+          <p class="boundary-note" data-vi="Luồng đúng: thành viên RI-YELLOW đăng nhập bằng OTP; người chưa là thành viên dùng Facebook hoặc Google → chọn listing RI-YELLOW đã xuất bản → gửi yêu cầu liên kết → human verification. OTP, đăng ký, thanh toán hoặc có listing không tự chứng minh quyền sở hữu." data-en="Correct flow: a RI-YELLOW member signs in with OTP; a non-member uses Facebook or Google → choose a published RI-YELLOW listing → request the link → human verification. OTP, registration, payment, or having a listing does not itself prove ownership.">Correct flow: a RI-YELLOW member signs in with OTP; a non-member uses Facebook or Google → choose a published RI-YELLOW listing → request the link → human verification. OTP, registration, payment, or having a listing does not itself prove ownership.</p>
+        </details>
+        <div id="business-link-result" class="result" aria-live="polite"></div>
+      </section>
+    </details>
+
+    <div id="workflow" class="workflow-grid public-preview">
+      <aside id="workflow-access-note" class="workflow-access-note" role="note">
+        <strong data-vi="Xem RI-SWAP trước khi đăng nhập" data-en="Explore RI-SWAP before signing in">Explore RI-SWAP before signing in</strong>
+        <span data-vi="Bạn có thể hỏi Hoa Mai, tạo và xem trước bản nháp trong phiên trình duyệt. Chỉ khi đăng nhập và xác nhận thì server mới lưu. Proposal, Accept và Agreement luôn cần danh tính thật." data-en="You can ask Hoa Mai, build, and preview a draft in this browser session. The server saves only after you sign in and confirm. Proposal, Accept, and Agreement always require a real identity.">You can ask Hoa Mai, build, and preview a draft in this browser session. The server saves only after you sign in and confirm. Proposal, Accept, and Agreement always require a real identity.</span>
+      </aside>
+      <section class="card offer-card" aria-labelledby="offer-title">
+        <header class="card-heading"><span>2</span><div><p class="eyebrow">OFFER</p><h2 id="offer-title" data-vi="Tạo đề nghị trao đổi" data-en="Create an exchange offer">Create an exchange offer</h2></div></header>
+        <details class="context-hint"><summary data-vi="Gợi ý tạo Offer" data-en="Offer tip">Offer tip</summary><p data-vi="Nêu rõ điều trao, điều cần, khu vực và thời gian. Lưu nháp để xem lại trước khi mở cho người khác gửi đề nghị." data-en="Describe what you give, need, where, and when. Save a draft to review before opening it to proposals.">Describe what you give, need, where, and when. Save a draft to review before opening it to proposals.</p></details>
+        <div class="hoa-mai-panel">
+          <div class="hoa-mai-icon" aria-hidden="true">✿</div>
+          <div>
+            <strong>Hoa Mai</strong>
+            <p data-vi="Mô tả bằng lời thường. Hoa Mai chỉ đề xuất cấu trúc; bạn phải xem lại trước khi lưu." data-en="Describe the exchange in plain language. Hoa Mai only suggests structure; you must review it before saving.">Describe the exchange in plain language. Hoa Mai only suggests structure; you must review it before saving.</p>
+            <details class="context-hint"><summary data-vi="Gợi ý dùng Hoa Mai" data-en="Hoa Mai tip">Hoa Mai tip</summary><p data-vi="Viết nhu cầu bằng tiếng Việt hoặc English; kiểm tra và sửa từng trường trước khi lưu. Ngôn ngữ trả lời của AI cần được kiểm chứng riêng." data-en="Describe your need in Vietnamese or English; review and edit every suggested field before saving. AI response language needs separate verification.">Describe your need in Vietnamese or English; review and edit every suggested field before saving. AI response language needs separate verification.</p></details>
+          </div>
+          <label class="wide"><span data-vi="Mô tả nhu cầu" data-en="Describe your need">Describe your need</span>
+            <textarea id="a-text" rows="3" maxlength="2000" data-vi-placeholder="Ví dụ: Tôi sửa xe đạp để đổi lấy bữa ăn cuối tuần…" data-en-placeholder="Example: I repair bikes in exchange for a weekend meal…" placeholder="Example: I repair bikes in exchange for a weekend meal…"></textarea>
+          </label>
+          <button id="b-assist" class="teal" type="button" data-vi="Hoa Mai gợi ý" data-en="Ask Hoa Mai">Ask Hoa Mai</button>
+          <div id="a-out" class="assistant-output" aria-live="polite"></div>
+          <details id="hoa-mai-ai-details" class="ai-execution-details" hidden>
+            <summary data-vi="Chi tiết AI" data-en="AI details">AI details</summary>
+            <dl class="review-list">
+              <dt data-vi="Nhà cung cấp" data-en="Provider">Provider</dt><dd id="hoa-mai-ai-provider">—</dd>
+              <dt data-vi="Mô hình" data-en="Model">Model</dt><dd id="hoa-mai-ai-model">—</dd>
+              <dt data-vi="Nguồn kết quả" data-en="Result source">Result source</dt><dd id="hoa-mai-ai-source">—</dd>
+              <dt data-vi="Kiểm tra schema" data-en="Schema check">Schema check</dt><dd id="hoa-mai-ai-schema">—</dd>
+              <dt data-vi="Server quan sát lúc" data-en="Server observed at">Server observed at</dt><dd id="hoa-mai-ai-observed">—</dd>
+              <dt data-vi="Execution ID" data-en="Execution ID">Execution ID</dt><dd id="hoa-mai-ai-execution">—</dd>
+              <dt data-vi="Route / HTTP" data-en="Route / HTTP">Route / HTTP</dt><dd id="hoa-mai-ai-route">—</dd>
+              <dt data-vi="Sử dụng token" data-en="Token usage">Token usage</dt><dd id="hoa-mai-ai-usage">—</dd>
+              <dt data-vi="Receipt bền vững" data-en="Durable receipt">Durable receipt</dt><dd id="hoa-mai-ai-receipt" data-vi="Chưa có · execution ID hiện chưa được lưu bền vững" data-en="Not available · the execution ID is not yet stored durably">Not available · the execution ID is not yet stored durably</dd>
+            </dl>
+          </details>
+        </div>
+
+        <div class="form-grid">
+          <label><span data-vi="Tôi trao" data-en="I give">I give</span><input id="o-give" maxlength="300" data-vi-placeholder="Ví dụ: 3 giờ sửa xe đạp" data-en-placeholder="Example: 3 hours of bike repair" placeholder="Example: 3 hours of bike repair"></label>
+          <label><span data-vi="Tôi cần" data-en="I receive">I receive</span><input id="o-receive" maxlength="300" data-vi-placeholder="Ví dụ: Một bữa ăn gia đình" data-en-placeholder="Example: a family meal" placeholder="Example: a family meal"></label>
+          <label><span data-vi="Suburb hoặc postcode" data-en="Suburb or postcode">Suburb or postcode</span><input id="o-loc" maxlength="160" placeholder="Cabramatta · NSW"></label>
+          <label><span data-vi="Thời gian phù hợp" data-en="Availability">Availability</span><input id="o-av" maxlength="160" data-vi-placeholder="Ví dụ: Cuối tuần" data-en-placeholder="Example: weekends" placeholder="Example: weekends"></label>
+          <label><span data-vi="Số gói giống nhau" data-en="Identical packages">Identical packages</span><input id="o-pk" type="number" min="1" value="2"></label>
+          <label><span data-vi="Hết hạn sau (giờ)" data-en="Expires in hours">Expires in hours</span><input id="o-exp" type="number" min="1" value="48"></label>
+        </div>
+        <section id="guest-draft-preview" class="guest-draft-preview" aria-labelledby="guest-draft-preview-title">
+          <div>
+            <p class="eyebrow" data-vi="XEM TRƯỚC · CHƯA LƯU DATABASE" data-en="PREVIEW · NOT SAVED TO DATABASE">PREVIEW · NOT SAVED TO DATABASE</p>
+            <h3 id="guest-draft-preview-title" data-vi="Bản nháp tạm trong phiên này" data-en="Temporary draft in this session">Temporary draft in this session</h3>
+          </div>
+          <dl id="guest-draft-preview-values"></dl>
+          <p id="guest-draft-session-note" class="boundary-note" data-vi="Bản nháp tạm chỉ ở tab này và có thể mất khi đóng tab. Không nhập mật khẩu, OTP, thông tin thẻ hoặc tài liệu nhạy cảm." data-en="This temporary draft stays only in this tab and may be lost when the tab closes. Do not enter passwords, OTPs, card details, or sensitive documents.">This temporary draft stays only in this tab and may be lost when the tab closes. Do not enter passwords, OTPs, card details, or sensitive documents.</p>
+          <p id="draft-evidence-boundary" class="boundary-note" data-vi="DATABASE_RECEIPT_NOT_VERIFIED · Chỉ có LOCAL/API_READBACK_ONLY cho đến khi PostgreSQL thật được kiểm chứng qua commit, reload và restart." data-en="DATABASE_RECEIPT_NOT_VERIFIED · LOCAL/API_READBACK_ONLY until real PostgreSQL commit, reload and restart are verified.">DATABASE_RECEIPT_NOT_VERIFIED · LOCAL/API_READBACK_ONLY until real PostgreSQL commit, reload and restart are verified.</p>
+          <div class="actions">
+            <button id="confirm-draft-save" type="button" hidden data-vi="Xác nhận lưu vào database" data-en="Confirm save to database">Confirm save to database</button>
+            <button id="discard-guest-draft" class="secondary" type="button" hidden data-vi="Hủy bản xem trước" data-en="Discard preview">Discard preview</button>
+          </div>
+        </section>
+        <div class="actions">
+          <button id="b-draft" type="button" data-vi="Lưu bản nháp" data-en="Save draft">Save draft</button>
+          <button id="b-publish" class="secondary" type="button" aria-describedby="open-offer-prerequisite" disabled data-vi="Mở Offer" data-en="Open offer">Open offer</button>
+        </div>
+        <p id="open-offer-prerequisite" class="boundary-note" role="status" data-vi="Guest có thể xem trước; đăng nhập và xác nhận lưu trước khi mở Offer." data-en="Guests can preview; sign in and confirm the save before opening the Offer.">Guests can preview; sign in and confirm the save before opening the Offer.</p>
+        <p class="boundary-note" data-vi="Mở Offer để nhận đề nghị; hai bên vẫn cần xác nhận." data-en="Opening an offer invites proposals; both parties still need to accept.">Opening an offer invites proposals; both parties still need to accept.</p>
+        <div id="o-state" class="result" aria-live="polite"></div>
+      </section>
+
+      <section class="card" aria-labelledby="proposal-title">
+        <header class="card-heading"><span>3</span><div><p class="eyebrow">BILATERAL PROPOSAL</p><h2 id="proposal-title" data-vi="Đề nghị riêng giữa hai bên" data-en="Private proposal between two parties">Private proposal between two parties</h2></div></header>
+        <details class="context-hint"><summary data-vi="Gợi ý gửi Proposal" data-en="Proposal tip">Proposal tip</summary><p data-vi="Proposal chỉ dành cho hai bên. Xem đúng số gói và điều khoản trước khi gửi; counteroffer sẽ tạo phiên bản mới." data-en="A proposal is private to the two parties. Check the packages and terms before sending; a counteroffer creates a new version.">A proposal is private to the two parties. Check the packages and terms before sending; a counteroffer creates a new version.</p></details>
+        <div id="sel" class="selected-summary" data-vi="Hãy chọn một Offer trước." data-en="Select an Offer first.">Select an Offer first.</div>
+        <label><span data-vi="Số gói muốn nhận" data-en="Packages requested">Packages requested</span><input id="p-pk" type="number" min="1" value="1"></label>
+        <div class="actions">
+          <button id="b-propose" type="button" data-vi="Gửi Proposal của tôi" data-en="Submit my proposal">Submit my proposal</button>
+          <button id="b-close-offer" class="danger-outline" type="button" hidden data-vi="Đóng phần chưa ghép" data-en="Close unmatched capacity">Close unmatched capacity</button>
+        </div>
+        <div id="props" class="list-region" aria-live="polite"></div>
+      </section>
+
+      <section class="card" aria-labelledby="agreement-title">
+        <header class="card-heading"><span>4</span><div><p class="eyebrow">AGREEMENT + READBACK</p><h2 id="agreement-title" data-vi="Thỏa thuận và kiểm tra lại" data-en="Agreement and readback">Agreement and readback</h2></div></header>
+        <details class="context-hint"><summary data-vi="Gợi ý xem Agreement" data-en="Agreement tip">Agreement tip</summary><p data-vi="Đọc lại điều khoản và trạng thái của Agreement. Agreement Reached chưa chứng minh đã giao hàng hoặc thanh toán." data-en="Read back the agreement terms and status. Agreement Reached does not prove delivery or payment.">Read back the agreement terms and status. Agreement Reached does not prove delivery or payment.</p></details>
+        <p class="process-note" data-vi="Hai bên phải Accept đúng cùng phiên bản và nội dung trước khi Agreement được tạo." data-en="Both parties must accept the exact same version and content before an Agreement is created.">Both parties must accept the exact same version and content before an Agreement is created.</p>
+        <details class="boundary-details">
+          <summary data-vi="Lưu trữ và xuất Work Studio" data-en="Storage and Work Studio export">Storage and Work Studio export</summary>
+          <p data-vi="Agreement chỉ được tạo từ danh tính thật đã đăng nhập và được lưu trong PostgreSQL live. Nút Work Studio chỉ xuất draft package cho đến khi API nhập liệu thật được kết nối và xác minh." data-en="Agreements are created only from authenticated real identities and stored in live PostgreSQL. The Work Studio button exports a draft package until a real import API is connected and verified.">Agreements are created only from authenticated real identities and stored in live PostgreSQL. The Work Studio button exports a draft package until a real import API is connected and verified.</p>
+        </details>
+        <div id="agrs" class="list-region" aria-live="polite"></div>
+      </section>
+
+      <details class="card audit-card">
+        <summary data-vi="Nhật ký kỹ thuật của phiên" data-en="Session technical log">Session technical log</summary>
+        <div id="log" class="mono" aria-live="polite"></div>
+      </details>
+    </div>
+
+    <section id="how-it-works" class="content-section" aria-labelledby="how-title">
+      <div class="section-heading">
+        <p class="eyebrow">HOW IT WORKS</p>
+        <h2 id="how-title" data-vi="Một luồng trao đổi, bốn bước rõ ràng" data-en="One exchange journey, four clear steps">One exchange journey, four clear steps</h2>
+      </div>
+      <div class="step-grid">
+        <article><span>1</span><h3 data-vi="Mở Offer" data-en="Open an Offer">Open an Offer</h3><p data-vi="Nêu rõ điều bạn trao, điều bạn cần, địa điểm, thời gian và số gói." data-en="State what you give, what you need, the location, availability, and package count.">State what you give, what you need, the location, availability, and package count.</p></article>
+        <article><span>2</span><h3 data-vi="Proposal riêng" data-en="Private proposal">Private proposal</h3><p data-vi="Mỗi bên trao đổi trên Proposal riêng; counteroffer không làm thay đổi Offer chung." data-en="Each party negotiates on a separate Proposal; a counteroffer does not alter the shared Offer.">Each party negotiates on a separate Proposal; a counteroffer does not alter the shared Offer.</p></article>
+        <article><span>3</span><h3 data-vi="Cùng chấp nhận" data-en="Both accept">Both accept</h3><p data-vi="Hai bên phải chấp nhận đúng cùng phiên bản và cùng nội dung." data-en="Both parties must accept the exact same version and content.">Both parties must accept the exact same version and content.</p></article>
+        <article><span>4</span><h3>Agreement Reached</h3><p data-vi="Hệ thống lưu Agreement và đọc lại. Đây chưa phải bằng chứng giao hàng hay thanh toán." data-en="The system stores and reads back the Agreement. This is not evidence of delivery or payment.">The system stores and reads back the Agreement. This is not evidence of delivery or payment.</p></article>
+      </div>
+    </section>
+
+    <section id="about" class="content-section split-section" aria-labelledby="about-title">
+      <div>
+        <p class="eyebrow">ABOUT RI-SWAP</p>
+        <h2 id="about-title" data-vi="Trao đổi cộng đồng trên nền RI-YELLOW" data-en="Community exchange on RI-YELLOW">Community exchange on RI-YELLOW</h2>
+      </div>
+      <div>
+        <p data-vi="RI-SWAP giúp doanh nghiệp và người dân tìm nhu cầu đối ứng, trao đổi điều khoản riêng và ghi lại Agreement có thể đọc lại. Cùng một mô hình hỗ trợ B2B, B2C, C2B và C2C; mỗi bên vẫn tự xem xét và quyết định." data-en="RI-SWAP helps businesses and people find reciprocal needs, negotiate private terms, and record a reviewable Agreement. The same model supports B2B, B2C, C2B, and C2C; each party still reviews and decides.">RI-SWAP helps businesses and people find reciprocal needs, negotiate private terms, and record a reviewable Agreement. The same model supports B2B, B2C, C2B, and C2C; each party still reviews and decides.</p>
+        <p data-vi="Phạm vi hiện tại kết thúc tại Agreement Reached sau khi đúng hai bên Accept cùng phiên bản và nội dung. Nó không xử lý thanh toán và không chứng minh giao hàng, chất lượng hoặc hoàn tất dịch vụ; kết nối chưa sẵn sàng luôn khóa an toàn." data-en="The current scope ends at Agreement Reached after exactly two parties accept the same version and content. It does not process payment or prove delivery, quality, or fulfilment; unavailable connections remain fail-closed.">The current scope ends at Agreement Reached after exactly two parties accept the same version and content. It does not process payment or prove delivery, quality, or fulfilment; unavailable connections remain fail-closed.</p>
+        <div class="actions">
+          <a class="text-link" href="#intro-ri-yellow" data-service-intro="ri-yellow" data-vi="Khám phá RI-YELLOW" data-en="Explore RI-YELLOW">Explore RI-YELLOW</a>
+          <a class="text-link" href="#intro-donghanh" data-service-intro="donghanh" data-vi="Khám phá Đồng Hành" data-en="Explore Đồng Hành">Explore Đồng Hành</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="help" class="content-section" aria-labelledby="help-title">
+      <div class="section-heading">
+        <p class="eyebrow">HELP</p>
+        <h2 id="help-title" data-vi="Bạn cần bắt đầu từ đâu?" data-en="Where should you start?">Where should you start?</h2>
+      </div>
+      <div class="help-grid">
+        <article><h3 data-vi="Tôi muốn xem trước" data-en="I want to browse">I want to browse</h3><p data-vi="Chọn khu vực và xem các Offer thật đang mở mà không cần đăng nhập." data-en="Choose a location and browse real open Offers without signing in.">Choose a location and browse real open Offers without signing in.</p><a href="#exchange" data-vi="Đi đến Exchange" data-en="Go to Exchange">Go to Exchange</a></article>
+        <article><h3 data-vi="Tôi muốn tham gia" data-en="I want to participate">I want to participate</h3><p data-vi="Đăng nhập bằng một nhà cung cấp đã được cấu hình. Kết nối chưa sẵn sàng sẽ hiển thị đúng trạng thái và bị khóa." data-en="Sign in with a configured provider. Any connection that is not ready is shown accurately and remains locked.">Sign in with a configured provider. Any connection that is not ready is shown accurately and remains locked.</p><a href="#real-only-gate" data-vi="Xem lựa chọn đăng nhập" data-en="View sign-in options">View sign-in options</a></article>
+        <article><h3 data-vi="Tôi có doanh nghiệp" data-en="I have a business">I have a business</h3><p data-vi="Tìm listing RI-YELLOW đã xuất bản hoặc đăng ký mới. Listing không tự chứng minh quyền sở hữu." data-en="Find your published RI-YELLOW listing or register a new one. A listing does not itself prove ownership.">Find your published RI-YELLOW listing or register a new one. A listing does not itself prove ownership.</p><a href="https://ri-ecosys.org/ri-yellow/#register" target="_blank" rel="noopener" data-vi="Đăng ký với RI-YELLOW ↗" data-en="Register with RI-YELLOW ↗">Register with RI-YELLOW ↗</a></article>
+      </div>
+
+      <details class="system-panel status-drawer">
+        <summary>
+          <span><span class="status-dot" aria-hidden="true"></span><strong id="system-title" data-vi="Trạng thái kết nối" data-en="Connection status">Connection status</strong></span>
+          <span data-vi="Xem chi tiết" data-en="View details">View details</span>
+        </summary>
+        <div id="banner" class="status-grid" aria-live="polite"><span>Loading status…</span></div>
+      </details>
+
+      <details id="journey-help" class="help-details journey-help">
+        <summary>
+          <span data-vi="Cách hoàn tất một trao đổi" data-en="How to complete an exchange">How to complete an exchange</span>
+          <span data-vi="Đăng nhập + bốn bước" data-en="Sign-in + four steps">Sign-in + four steps</span>
+        </summary>
+        <div class="help-details-body">
+          <p data-vi="Ở phần đăng nhập, chỉ nhà cung cấp được đánh dấu sẵn sàng mới dùng được; lựa chọn đang cấu hình hoặc không khả dụng vẫn bị khóa. OTP RI-YELLOW chỉ xác minh kênh liên lạc đã enrol, không tự xác minh quyền sở hữu doanh nghiệp." data-en="At sign-in, only a provider marked available can be used; options still being configured or unavailable remain locked. RI-YELLOW OTP verifies only the enrolled contact channel, not business ownership.">At sign-in, only a provider marked available can be used; options still being configured or unavailable remain locked. RI-YELLOW OTP verifies only the enrolled contact channel, not business ownership.</p>
+          <ol>
+            <li data-vi="Offer — nêu điều bạn trao, điều bạn cần, khu vực, thời gian và số gói." data-en="Offer — state what you give, what you need, the location, availability, and package count.">Offer — state what you give, what you need, the location, availability, and package count.</li>
+            <li data-vi="Discover — tìm Offer phù hợp và chọn đúng nhu cầu đối ứng." data-en="Discover — find a suitable Offer and select the reciprocal need.">Discover — find a suitable Offer and select the reciprocal need.</li>
+            <li data-vi="Proposal — mỗi đối tác trao đổi trên Proposal riêng; capacity của Offer vẫn được kiểm tra." data-en="Proposal — each counterparty negotiates on a separate Proposal; Offer capacity is still enforced.">Proposal — each counterparty negotiates on a separate Proposal; Offer capacity is still enforced.</li>
+            <li data-vi="Accept — đúng hai bên phải Accept cùng proposal version và nội dung; khi đó hệ thống mới tạo Agreement." data-en="Accept — exactly two parties must accept the same proposal version and content before the system creates an Agreement.">Accept — exactly two parties must accept the same proposal version and content before the system creates an Agreement.</li>
+          </ol>
+          <p class="boundary-note" data-vi="Agreement Reached ghi nhận thỏa thuận, không phải thanh toán, giao hàng, hoàn tất dịch vụ hay bảo đảm pháp lý." data-en="Agreement Reached records an agreement; it is not payment, delivery, fulfilment, or a legal guarantee.">Agreement Reached records an agreement; it is not payment, delivery, fulfilment, or a legal guarantee.</p>
+          <p><a class="text-link" href="#real-only-gate" data-vi="Xem trạng thái đăng nhập" data-en="View sign-in status">View sign-in status</a> · <a class="text-link" href="#business-link-details" data-vi="Xem liên kết doanh nghiệp" data-en="View business linking">View business linking</a> · <a class="text-link" href="#agreement-title" data-vi="Đi đến Agreement" data-en="Go to Agreement">Go to Agreement</a></p>
+        </div>
+      </details>
+    </section>
+
+      <section id="knowledge-help" class="card knowledge-panel" aria-labelledby="knowledge-title">
+        <div class="help-details-body">
+          <div>
+            <p class="eyebrow">KNOWLEDGE + GOVERNED AI</p>
+            <h3 id="knowledge-title" data-vi="Hỏi hệ thống" data-en="Ask the system">Ask the system</h3>
+            <p data-vi="Câu trả lời giữ riêng từng nguồn: JSON của RKB-HOD, RI-KOS nếu có kết nối, và RI-BCA informational. Không nguồn nào tự tạo giao dịch hay quyết định thay con người." data-en="Answers keep each source separate: the RKB-HOD JSON, RI-KOS when connected, and informational RI-BCA. No source creates a transaction or decides for a person.">Answers keep each source separate: the RKB-HOD JSON, RI-KOS when connected, and informational RI-BCA. No source creates a transaction or decides for a person.</p>
+          </div>
+          <div class="knowledge-actions">
+            <label><span data-vi="Câu hỏi" data-en="Question">Question</span><input id="k-question" maxlength="600" data-vi-placeholder="Ví dụ: Agreement Reached có nghĩa là gì?" data-en-placeholder="Example: What does Agreement Reached mean?"></label>
+            <button id="b-knowledge" class="teal" type="button" data-vi="Hỏi hệ thống" data-en="Ask the system">Ask the system</button>
+          </div>
+          <div id="knowledge-answer" class="source-results" aria-live="polite"></div>
+        </div>
+      </section>
+  </main>
+
+  <dialog id="hoa-mai-action-dialog" aria-labelledby="hoa-mai-action-title">
+    <div class="dialog-panel hoa-mai-action-panel">
+      <div class="dialog-heading">
+        <div><p class="eyebrow">HOA MAI · ACTION CHAT</p><h2 id="hoa-mai-action-title" data-vi="Bạn muốn Hoa Mai giúp việc gì?" data-en="What would you like Hoa Mai to help with?">What would you like Hoa Mai to help with?</h2></div>
+        <button id="hoa-mai-action-close" class="secondary" type="button" data-vi="Đóng" data-en="Close">Close</button>
+      </div>
+      <p data-vi="Chọn một ý định có giới hạn. Hoa Mai chỉ điều hướng đến chức năng đang có; không tự gửi, đăng, nộp đơn hay giao dịch." data-en="Choose a bounded intent. Hoa Mai only routes to an existing function; it never auto-sends, publishes, applies, or transacts.">Choose a bounded intent. Hoa Mai only routes to an existing function; it never auto-sends, publishes, applies, or transacts.</p>
+      <label for="hoa-mai-intent"><span data-vi="Tôi muốn" data-en="I want to">I want to</span>
+        <select id="hoa-mai-intent">
+          <option value="offer" data-vi="Soạn nháp Offer" data-en="Draft an Offer">Draft an Offer</option>
+          <option value="ri-yellow" data-vi="Tìm dịch vụ trên RI-YELLOW" data-en="Find services on RI-YELLOW">Find services on RI-YELLOW</option>
+          <option value="donghanh" data-vi="Mở Đồng Hành" data-en="Open Đồng Hành">Open Đồng Hành</option>
+          <option value="jobs" data-vi="Xem hướng dẫn tìm việc" data-en="Get job-finding guidance">Get job-finding guidance</option>
+          <option value="help" data-vi="Mở Trợ giúp" data-en="Open Help">Open Help</option>
+          <option value="about" data-vi="Tìm hiểu RI-SWAP" data-en="Learn about RI-SWAP">Learn about RI-SWAP</option>
+          <option value="contact" data-vi="Tìm thông tin liên hệ" data-en="Find contact information">Find contact information</option>
+        </select>
+      </label>
+      <button id="b-hoa-mai-action" class="teal" type="button" data-vi="Tiếp tục" data-en="Continue">Continue</button>
+      <div id="hoa-mai-action-result" class="result" role="status" aria-live="polite"></div>
+    </div>
+  </dialog>
+
+  <dialog id="service-intro-dialog" aria-label="Related service introduction">
+    <div class="dialog-card">
+      <button id="service-intro-back" class="secondary" type="button" data-vi="← Trở lại RI-SWAP" data-en="← Back to RI-SWAP">← Back to RI-SWAP</button>
+      <article data-service-panel="ri-yellow" hidden>
+        <p class="eyebrow">RI-YELLOW</p>
+        <h2 data-vi="Tìm doanh nghiệp trong cộng đồng Việt–Úc" data-en="Find Vietnamese Australian businesses">Find Vietnamese Australian businesses</h2>
+        <p data-vi="RI-YELLOW là danh bạ để xem các hồ sơ doanh nghiệp được công bố. Trong RI-SWAP, bạn có thể tìm nhu cầu trao đổi; một listing không tự chứng minh quyền đại diện doanh nghiệp." data-en="RI-YELLOW is a directory of published business profiles. RI-SWAP helps people explore exchange needs; a listing does not itself verify authority to represent a business.">RI-YELLOW is a directory of published business profiles. RI-SWAP helps people explore exchange needs; a listing does not itself verify authority to represent a business.</p>
+        <div class="actions"><a class="button-link" href="https://ri-ecosys.org/ri-yellow/" target="_blank" rel="noopener" data-vi="Mở RI-YELLOW ↗" data-en="Open RI-YELLOW ↗">Open RI-YELLOW ↗</a></div>
+      </article>
+      <article data-service-panel="donghanh" hidden>
+        <p class="eyebrow">ĐỒNG HÀNH</p>
+        <h2 data-vi="Đời sống và văn hóa cộng đồng" data-en="Community life and culture">Community life and culture</h2>
+        <p data-vi="Đồng Hành chia sẻ thông tin đời sống, văn hóa và câu chuyện cộng đồng Việt tại Úc. Muốn xem hoặc tạo một đề nghị trao đổi, hãy trở lại RI-SWAP." data-en="Đồng Hành shares information about life, culture, and the Vietnamese community in Australia. Return to RI-SWAP to browse or create an exchange offer.">Đồng Hành shares information about life, culture, and the Vietnamese community in Australia. Return to RI-SWAP to browse or create an exchange offer.</p>
+        <div class="actions"><a class="button-link" href="https://ri-ecosys.org/donghanh/" target="_blank" rel="noopener" data-vi="Mở Đồng Hành ↗" data-en="Open Đồng Hành ↗">Open Đồng Hành ↗</a></div>
+      </article>
+    </div>
+  </dialog>
+
+  <dialog id="ri-yellow-login-dialog" aria-labelledby="ri-yellow-login-title">
+    <form id="ri-yellow-login-form" class="dialog-card">
+      <p class="eyebrow">RI-YELLOW · WHATSAPP OTP</p>
+      <h2 id="ri-yellow-login-title" data-vi="Đăng nhập bằng tài khoản RI-YELLOW" data-en="Sign in with your RI-YELLOW account">Sign in with your RI-YELLOW account</h2>
+      <p data-vi="Nhập Business ID hoặc mã RI-BIZ. Mã OTP chỉ được gửi đến WhatsApp đã enrol trong RI-YELLOW." data-en="Enter the Business ID or RI-BIZ code. The OTP is sent only to the WhatsApp contact enrolled by RI-YELLOW.">Enter the Business ID or RI-BIZ code. The OTP is sent only to the WhatsApp contact enrolled by RI-YELLOW.</p>
+      <label><span data-vi="Business ID / mã RI-BIZ" data-en="Business ID / RI-BIZ code">Business ID / RI-BIZ code</span><input id="ri-yellow-business-ref" maxlength="36" autocomplete="organization" placeholder="RI-BIZ-000001" required></label>
+      <button id="ri-yellow-send-otp" type="submit" data-vi="Gửi mã OTP" data-en="Send OTP">Send OTP</button>
+      <div id="ri-yellow-otp-step" hidden>
+        <p id="ri-yellow-otp-hint" class="process-note" aria-live="polite"></p>
+        <label><span data-vi="Mã OTP 6 số" data-en="Six-digit OTP">Six-digit OTP</span><input id="ri-yellow-otp-code" inputmode="numeric" pattern="[0-9]{6}" maxlength="6" autocomplete="one-time-code"></label>
+        <button id="ri-yellow-verify-otp" type="button" data-vi="Xác minh và đăng nhập" data-en="Verify and sign in">Verify and sign in</button>
+      </div>
+      <p class="boundary-note" data-vi="OTP chỉ xác minh quyền kiểm soát kênh liên lạc đã enrol. Quyền giao dịch doanh nghiệp vẫn chờ xác minh riêng." data-en="OTP verifies control of the enrolled contact channel only. Business transaction authority remains separately pending.">OTP verifies control of the enrolled contact channel only. Business transaction authority remains separately pending.</p>
+      <div class="actions"><button id="ri-yellow-login-cancel" class="secondary" type="button" data-vi="Đóng" data-en="Close">Close</button></div>
+    </form>
+  </dialog>
+
+  <dialog id="accept-dialog" aria-labelledby="accept-title">
+    <form method="dialog" class="dialog-card">
+      <p class="eyebrow">HUMAN CONFIRMATION</p>
+      <h2 id="accept-title" data-vi="Xác nhận trước khi Accept" data-en="Review before Acceptance">Review before Acceptance</h2>
+      <details class="context-hint"><summary data-vi="Gợi ý trước khi Accept" data-en="Before you accept">Before you accept</summary><p data-vi="Kiểm tra đối tác, điều khoản và phiên bản bên dưới. Hai bên phải đồng ý đúng cùng nội dung." data-en="Check the other party, terms, and version below. Both parties must agree to the exact same content.">Check the other party, terms, and version below. Both parties must agree to the exact same content.</p></details>
+      <dl id="accept-review" class="review-list"></dl>
+      <p class="boundary-note" data-vi="Nếu cả hai bên Accept cùng version và nội dung, hệ thống có thể tạo Agreement Reached. Điều này không xác nhận hoàn thành trao đổi." data-en="If both parties accept the same version and content, the system may create Agreement Reached. This does not confirm fulfilment.">If both parties accept the same version and content, the system may create Agreement Reached. This does not confirm fulfilment.</p>
+      <div class="actions">
+        <button id="accept-cancel" class="secondary" value="cancel" type="button" data-vi="Quay lại" data-en="Go back">Go back</button>
+        <button id="accept-confirm" value="confirm" type="button" data-vi="Tôi đã xem và Accept" data-en="I reviewed and accept">I reviewed and accept</button>
+      </div>
+    </form>
+  </dialog>
+
+  <footer>
+    <strong>RI-SWAP · RI-ECOSYS</strong>
+    <span data-vi="Con người xem lại và quyết định mọi thỏa thuận." data-en="People review and decide every agreement.">People review and decide every agreement.</span>
+  </footer>
+  <script type="module" src="app.js?v=ri-swap-ui-session-recovery-20261029-36"></script>
+  <script type="module" src="navigation.js?v=ri-swap-service-intro-20261029-20"></script>
+</body>
+</html>
